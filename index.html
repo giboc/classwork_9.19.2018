@@ -3,28 +3,71 @@
     <header>
         <title>Activity 1: Basic HTML bio</title>
         <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+
             h1{
                 text-align: center;
                 background-color: black;
                 color: white;
             }
 
+            h2{
+                text-align: left;
+                background-color: white;
+                color: black;
+                
+            }
+
+            .wrapper{
+                min-width: 720px;
+                margin: 0 auto;
+                
+            }
+
+            .leftCol{
+                width: 500px;
+                float: left;
+                padding: 0px;
+                padding-left: 20px;
+                               
+            }
+
+            .rightCol{
+                width: 250px;
+                float: right;
+                padding: 0px;
+                padding-right: 20px;
+            }
+
+            .imgFloat{
+                float: left;
+                padding: 10px;
+            }
         </style>
     </header>
     <body>
         <h1>Student Bio</h1>
+        <div class="wrapper">
+            <div class="leftCol">
+                <h2>Alexander Sato</h2>
+                <br>
+                <img class="imgFloat" src="https://i.kym-cdn.com/entries/icons/medium/000/022/690/download.jpg" alt="Definitely me and not a shoebill">
+                <p>
+                    I'm just another student in the Columbia coding bootcamp. Aside from coding, I also enjoy playing games and going to shows. Also, I am definitely a bird.
+                </p>
+            </div>
 
-        <h2>Alexander Sato</h2>
-        <br>
-        <img src="https://i.kym-cdn.com/entries/icons/medium/000/022/690/download.jpg" alt="Definitely me and not a shoebill">
-        <p>
-            I'm just another student in the Columbia coding bootcamp. Aside from coding, I also enjoy playing games and going to shows. Also, I am definitely a bird.
-        </p>
-        <h2>Contact Info</h2>
-        <ul>
-            <li><strong>Email: <a href="as4628@columbia.edu">as4628@columbia.edu</a></strong></li>
-            <li><strong>Github: <a href="https://github.com/giboc">https://github.com/giboc</a></strong></li>
-            <li><strong>Portfolio: <a href="#">Coming Soon!</a></strong></li>
-        </ul>
+            <div class="rightCol">
+                <h2>Contact Info</h2>
+                <ul>
+                    <li><strong>Email: <a href="as4628@columbia.edu">as4628@columbia.edu</a></strong></li>
+                    <li><strong>Github: <a href="https://github.com/giboc">https://github.com/giboc</a></strong></li>
+                    <li><strong>Portfolio: <a href="#">Coming Soon!</a></strong></li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
